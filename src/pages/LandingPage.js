@@ -9,10 +9,10 @@ import "../styles/LandingPageStyles.css"
 function LandingPage(){
     return(
         <div>
-            Landing page
-            <div className ="section-container">
+            <div className ="nav-container">
             <Navbar/>
             </div>
+        <div id="landing-container">
             <div className ="section-container">
             <Intro/>
             </div>
@@ -28,6 +28,7 @@ function LandingPage(){
             <div className ="section-container">
             <Footer/>
             </div>
+        </div>
         </div>
     );
 }

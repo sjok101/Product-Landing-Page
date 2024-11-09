@@ -1,42 +1,54 @@
 import "../styles/NavbarStyles.css"
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Navbar = () => {
-    const [isSticky, setIsSticky] = useState(false);
-    const navbarRef = useRef(null);
-    const navbarOffsetTopRef = useRef(0); // Define navbarOffsetTopRef using useRef
-  
-    useEffect(() => {
-      // Store the initial offsetTop value of the navbar
-      if (navbarRef.current) {
-        navbarOffsetTopRef.current = navbarRef.current.offsetTop;
+  const [isSticky, setIsSticky] = useState(false);
+  const navbarRef = useRef(null);
+  const navbarOffsetTopRef = useRef(0);
+
+  useEffect(() => {
+    const landingContainer = document.getElementById("landing-container");
+
+    // Store the initial offsetTop value of the navbar relative to landingContainer
+    if (navbarRef.current) {
+      navbarOffsetTopRef.current = navbarRef.current.offsetTop;
+    }
+
+    const handleScroll = () => {
+      if (landingContainer.scrollTop > navbarOffsetTopRef.current) {
+        // console.log("true")
+        // console.log(landingContainer.scrollTop)
+        // console.log(navbarOffsetTopRef.current)
+        setIsSticky(true);
+      } else {
+        // console.log("false")
+        // console.log(landingContainer.scrollTop)
+        // console.log(navbarOffsetTopRef.current)
+        setIsSticky(false);
       }
-  
-      const handleScroll = () => {
-        if (window.scrollY >= navbarOffsetTopRef.current) {
-          setIsSticky(true);
-        } else {
-          setIsSticky(false);
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      // Cleanup the event listener on component unmount
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []); // Empty dependency array to only set up once
-  
-    return (
+    };
+
+    // Add scroll event listener to landingContainer instead of window
+    landingContainer.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      landingContainer.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <div>
+      <div id={isSticky ? "sticky-gap" : ""}></div>
       <div
         ref={navbarRef}
-        className="navbar-container" // Use a className so that id will take precedence
-        id={isSticky ? "fixed-navbar" : ""} 
+        className="navbar-container"
+        id={isSticky ? "fixed-navbar" : ""}
       >
         <h1>Navbar</h1>
       </div>
-    );
-  };
-  
-  export default Navbar;
+    </div>
+  );
+};
+
+export default Navbar;

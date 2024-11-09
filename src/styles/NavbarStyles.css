@@ -1,3 +1,4 @@
+
 .navbar-container {
     position: relative;
     width: 100%;
@@ -13,5 +14,9 @@
     left: 0;
     width: 100%;
     background-color: lightcoral; /* Optional: change color to indicate fixed state */
+    transition: background-color 0.3s ease; /* Smooth transition when sticky */
   }
   
+  #sticky-gap {
+    height : 15vh;
+  }
