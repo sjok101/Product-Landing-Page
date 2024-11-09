@@ -1,0 +1,14 @@
+#footer-link-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link-column{
+    display:flex;
+    flex-direction: column;
+}
+
+#footer-social-media-links img{
+    height: 10vh;
+    width: 10vh;
+}

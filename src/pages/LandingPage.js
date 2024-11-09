@@ -1,24 +1,33 @@
+import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
 import Why from "../components/Why";
 import How from "../components/How";
 import Pricing from "../components/Pricing";
 import Footer from "../components/Footer";
+import "../styles/LandingPageStyles.css"
 
 function LandingPage(){
     return(
         <div>
             Landing page
+            <div className ="section-container">
+            <Navbar/>
+            </div>
+            <div className ="section-container">
             <Intro/>
-            Introduction
+            </div>
+            <div className ="section-container">
             <Why/>
-            Why use it
+            </div>
+            <div className ="section-container">
             <How/>
-            How to use it
+            </div>
+            <div className ="section-container">
             <Pricing/>
-            Pricing
-            Download Free Trial or Purchase
+            </div>
+            <div className ="section-container">
             <Footer/>
-            Footer
+            </div>
         </div>
     );
 }
