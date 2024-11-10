@@ -46,6 +46,17 @@ const Navbar = () => {
         id={isSticky ? "fixed-navbar" : ""}
       >
         <h1>Navbar</h1>
+        <div id="nav-links">
+        <div id="nav-links-left">
+            <a href="/">Link 1</a>
+            <a href="/">Link 2</a>
+            <a href="/">Link 3</a>
+        </div>
+        <div id="nav-links-right">
+            <a href="/">Link 4</a>
+            <a href="/">Link 5</a>
+        </div>
+        </div>
       </div>
     </div>
   );

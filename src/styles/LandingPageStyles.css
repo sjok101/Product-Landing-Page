@@ -14,3 +14,19 @@ body {
     height: 100vh;
 }
 
+#intro-container{
+    margin: auto;
+    padding: 5vh 0;
+    text-align: center;
+    border: 1px black solid;
+    height: auto;
+    width: 130vh;
+}
+
+#intro-box{
+    height: auto;
+    width: 100vh;
+    display: inline-block;
+    text-align: left;
+}
+

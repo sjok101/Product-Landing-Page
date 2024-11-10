@@ -2,8 +2,8 @@
 .navbar-container {
     position: relative;
     width: 100%;
-    background-color: lightblue;
-    padding: 20px;
+    background-color: rgb(225, 201, 246);
+    /* padding: 5px; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
@@ -18,5 +18,27 @@
   }
   
   #sticky-gap {
-    height : 15vh;
+    height : 10vh;
+  }
+
+  #nav-links{
+    display: flex;
+  }
+
+  #nav-links-left{
+    margin-right: 0;
+  }
+
+  #nav-links-left a{
+    padding-left: 2vh;
+  }
+
+
+  #nav-links-right{
+    margin-left: auto;
+    padding-right: 5vh;
+  }
+  
+  #nav-links-right a{
+    padding-right: 2vh;
   }
