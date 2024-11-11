@@ -1,4 +1,4 @@
-body {
+/* body {
     overflow: hidden;
     margin: 0;
   }
@@ -12,7 +12,20 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: auto;
     height: 100vh;
+} */
+
+.section-container{
+    height: 100vh;
+    width: auto;
 }
+
+/* @media (max-height: 800px){
+    .section-container{
+        height: 125vh;
+    border: 1px red solid;
+    }
+} */
+
 
 #intro-container{
     margin: auto;
@@ -25,7 +38,21 @@ body {
 
 #intro-box{
     height: auto;
-    width: 100vh;
+    width: 80vh;
+    display: inline-block;
+    text-align: left;
+}
+
+#why-container, #how-container, #pricing-container{
+    margin: auto;
+    text-align: center;
+    height: auto;
+    width:150vh;
+}
+
+#why-box, #how-box, #pricing-box{
+    height:auto;
+    width: 120vh;
     display: inline-block;
     text-align: left;
 }

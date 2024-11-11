@@ -1,6 +1,9 @@
 function How(){
     return(
         <div>
+        <div style={{height:"10vh"}}></div>
+        <div id = "how-container">
+            <div id="how-box">
             <h1>How</h1>
             <p>How [Product Name] Works</p>
             <p>Using [Product Name] is as straightforward as it is powerful:</p>
@@ -14,6 +17,9 @@ function How(){
                 <p>
                 [Product Name] combines the latest in [Relevant Technology or Feature Category] with a user-friendly interface, ensuring that from setup to daily use, everything is simple, effective, and focused on your success.
             </p>
+            <a style={{paddingLeft:"10vh"}} href="/">Try Here</a>
+            </div>
+        </div>
         </div>
     )
 };

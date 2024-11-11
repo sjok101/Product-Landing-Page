@@ -1,7 +1,7 @@
 function Intro(){
     return(
         <div>
-            <div style={{height:'10vh'}}></div>
+            <div style={{height:'20vh'}}></div>
         <div id="intro-container">
             <div id="intro-box">
             <h1>Introduction</h1>

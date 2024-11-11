@@ -1,6 +1,9 @@
 function Pricing(){
     return(
         <div>
+        <div></div>
+        <div id="pricing-container">
+            <div id="pricing-box">
             <h1>Pricing</h1>
             <p>We believe in letting you experience the power of [Product Name] firsthand, which is why we offer a free trial to get you started with no commitment.</p>
             
@@ -16,6 +19,13 @@ function Pricing(){
                 <p>
                 Whether you’re just getting started or looking to grow, [Product Name] offers flexible options to suit your needs. Start with the free trial and upgrade at any time—your satisfaction is our priority!
             </p>
+            </div>
+            <div id="pricing-img-box">
+            <img src="https://placehold.co/300x400"></img>
+            <img src="https://placehold.co/300x400"></img>
+            <img src="https://placehold.co/300x400"></img>
+            </div>
+        </div>
         </div>
     )
 };

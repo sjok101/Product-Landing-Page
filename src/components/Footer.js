@@ -3,6 +3,7 @@ import "../styles/FooterStyles.css"
 function Footer(){
     return(
         <div>
+        <div id="footer-box">
             <h1>Footer</h1>
             <div id= "footer-link-container">
                 <div className = "footer-link-column">
@@ -40,6 +41,7 @@ function Footer(){
             </div>
 
 
+        </div>
         </div>
     )
 };
