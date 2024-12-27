@@ -1,4 +1,5 @@
 const User = require('../models/User');
+const { generateToken } = require('../util/tokenService')
 
 exports.createUser = async(req, res) => {
     const { username, email, password } = req.body;
@@ -12,7 +13,10 @@ exports.createUser = async(req, res) => {
         const user = new User({ username, email, password });
         await user.save();
 
-        res.status(201).json({ message: 'User created successfully.'});
+        //generate token on signup
+        const token = generateToken({id: user._id, email: user.email});
+
+        res.status(201).json({ message: 'User created successfully.', token});
     }catch(error){
         res.status(500).json({message: `${error}`});
     }
