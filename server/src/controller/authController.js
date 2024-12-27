@@ -23,10 +23,10 @@ exports.createUser = async(req, res) => {
 }
 
 exports.loginUser = async(req, res) => {
-    const { username, password } = req.body;
+    const { email, password } = req.body;
 
     try{
-        const user = await User.findOne({username});
+        const user = await User.findOne({email});
         if(!user) {
             return res.status(404).json({ error: 'User not found' });
         }
@@ -36,7 +36,9 @@ exports.loginUser = async(req, res) => {
             return res.status(401).json({ error: 'Invalid password' });
         }
 
-        res.status(200).json({ message: 'Login successful.'});
+        const token = generateToken({ id: user._id, email: user.email});
+
+        res.status(200).json({ message: 'Login successful.', token});
     }catch(error){
         res.status(500).json({message: `${error}`});
     }
