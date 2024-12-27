@@ -44,3 +44,7 @@ exports.loginUser = async(req, res) => {
     }
 
 }
+
+exports.testProtect = async (req, res) => {
+    res.status(200).json({message: "Protected Access Given", user: req.user});
+}
