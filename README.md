@@ -32,5 +32,8 @@ npm i
 1. **client/:** This folder contains the front-end application using the React framework created with the `create-react-app` command. It showcases common sections and uses placeholders for easy replacement.
 2. **server/:** This folder will contain several backend applications to support the client to showcase their modularity. Currently, a server utilizing Mongoose, Node, and Express is available.
 
+### Configurations:
+1. Enable dynamic navbar with snap alignment in LandingPageStyles.css by removing the comment tags for the .body, .section-container, #landing-container.
+
 
 `*instruction may change in the future`
