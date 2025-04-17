@@ -53,8 +53,8 @@ const Navbar = () => {
             <a href="/">Link 3</a>
         </div>
         <div id="nav-links-right">
-            <a href="/">Link 4</a>
-            <a href="/">Link 5</a>
+            <a href="/">Login</a>
+            <a href="/">Sign-up</a>
         </div>
         </div>
       </div>
