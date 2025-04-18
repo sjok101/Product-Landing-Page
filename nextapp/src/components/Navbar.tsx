@@ -1,14 +1,9 @@
-
-
-
 const Navbar = () => {
   
 
   return (
     <div>
-      
       <div>
-        <h1>Navbar</h1>
         <div id="nav-links" className="flex flex-row fixed ">
           <div id="nav-links-left">
             <a href="/">Link 1</a>

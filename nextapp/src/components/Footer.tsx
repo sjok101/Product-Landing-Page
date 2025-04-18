@@ -2,7 +2,7 @@
 function Footer(){
     return(
         <div>
-        <div id="footer-box">
+        <div id="footer-box" className="bg-lime-200">
             <h1>Footer</h1>
             <div id= "footer-link-container">
                 <div className = "footer-link-column">

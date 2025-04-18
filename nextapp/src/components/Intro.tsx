@@ -1,8 +1,7 @@
 function Intro(){
     return(
         <div>
-            <div style={{height:'20vh'}}></div>
-        <div id="intro-container">
+        <div id="intro-container" className="my-10 min-h-screen bg-amber-200">
             <div id="intro-box">
             <h1>Introduction</h1>
             <p>Introducing [Product Name] by [Company Name]: the ultimate solution for [Primary Benefit or Problem Solved]! </p>

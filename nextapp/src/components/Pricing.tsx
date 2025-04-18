@@ -2,7 +2,7 @@ function Pricing(){
     return(
         <div>
         <div></div>
-        <div id="pricing-container">
+        <div id="pricing-container" className="my-10 min-h-screen bg-amber-200">
             <div id="pricing-box">
             <h1>Pricing</h1>
             <p>We believe in letting you experience the power of [Product Name] firsthand, which is why we offer a free trial to get you started with no commitment.</p>

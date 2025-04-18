@@ -1,8 +1,7 @@
 function How(){
     return(
         <div>
-        <div style={{height:"10vh"}}></div>
-        <div id = "how-container">
+        <div id = "how-container" className="my-10 min-h-screen bg-slate-200">
             <div id="how-box">
             <h1>How</h1>
             <p>How [Product Name] Works</p>

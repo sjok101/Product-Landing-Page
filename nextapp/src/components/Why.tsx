@@ -1,7 +1,7 @@
 function Why(){
     return(
         <div>
-        <div id="why-container">
+        <div id="why-container" className="my-10 min-h-screen bg-lime-200">
             <div id="why-box">
             <h1>Why</h1>
             <p>Why Choose [Product Name]?</p>
