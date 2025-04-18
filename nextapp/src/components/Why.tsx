@@ -1,14 +1,16 @@
+import Image from 'next/image';
+
 function Why(){
     return(
         <div>
         <div id="why-container" className="my-10 min-h-screen bg-lime-200">
-            <div id="why-box">
+            <div id="why-box" className="flex flex-col items-center space-y-5">
             <h1>Why</h1>
             <p>Why Choose [Product Name]?</p>
             <p>With so many options out there, why [Product Name]? The answer is simple: efficiency, innovation, and reliability. Designed with [Target Audience] in mind, [Product Name] stands out by offering [Key Unique Feature or Benefit]. Unlike traditional solutions that [Describe Limitations of Competitors or Standard Solutions], [Product Name] delivers [Primary Benefit], making it the preferred choice for [Audience’s Common Goal or Need].</p>
             
-            <img src="https://placehold.co/600x400"></img>
-            <a id="learn-more-button" className="all-buttons" href="/">Learn More</a>
+            <Image src="/600x400.svg" alt='placeholder' width={600} height={400}></Image>
+            <a id="learn-more-button"  href="/">Learn More</a>
            
             <p>Here’s what sets [Product Name] apart:</p>
              
