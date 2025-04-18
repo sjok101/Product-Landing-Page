@@ -1,8 +1,9 @@
 function How(){
     return(
         <div>
-        <div id = "how-container" className="my-10 min-h-screen bg-slate-200">
-            <div id="how-box">
+        <div id = "how-container" className="my-10 min-h-screen bg-slate-200
+                                               flex justify-center items-center">
+            <div id="how-box" className=" space-y-5">
             <h1>How</h1>
             <p>How [Product Name] Works</p>
             <p>Using [Product Name] is as straightforward as it is powerful:</p>
