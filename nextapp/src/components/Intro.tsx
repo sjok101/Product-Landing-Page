@@ -1,15 +1,20 @@
+import Image from 'next/image';
+
 function Intro(){
     return(
         <div>
         <div id="intro-container" className="my-10 min-h-screen bg-amber-200
                                             flex justify-center items-center">
-            <div id="intro-box" className="space-y-[40px] w-[500px] bg-amber-300/50 py-5 px-10" >
-            <h1>Introduction</h1>
-            <p>Introducing [Product Name] by [Company Name]: the ultimate solution for [Primary Benefit or Problem Solved]! </p>
-            <p>Are you tired of [Common Pain Point]? [Product Name] is here to transform how you [Describe Key Action or Feature], offering [Unique Selling Point or Feature] at just [Price or Subscription Info]! Whether you’re a [Target Audience] or simply need a tool that makes [Primary Benefit] effortless, [Product Name] has you covered.</p>
-            <p>With [Feature #1], [Feature #2], and [Feature #3], [Product Name] ensures that you’re always ahead of the curve, staying productive and efficient without the hassle. Backed by [Company Name]’s commitment to excellence, this software is built to evolve alongside your needs.</p>
-            <p>Ready to experience the future of [Industry/Field]? Try [Product Name] now, and join [Number or Type of Existing Users] already benefiting from our cutting-edge features.</p>
-            <p>Get started today with [Product Name]—your solution to [Problem Solved]!</p>
+            <div id="intro-box" className="space-y-[40px] w-[500px] bg-amber-300/50 py-5 px-10
+                                            absolute mr-[17vw] top-10 my-10" >
+                <h1>CRM-lite is a strong tool for building and maintaining a client base.</h1>
+                <p>Check out the feature that comes in this lite version. Free usage, easy-to-use and visualize your goals.</p>
+                <button className='p-2 bg-amber-500/50'>See Features</button>
+                <button className='p-2 hover:bg-blue-400/50'>Pricing</button>
+            </div>
+        
+            <div className='shrink-0 flex justify center'>
+                <Image src={'/600x400.svg'} width={600} height={400} alt='BG' layout='fixed'></Image>
             </div>
         </div>
         </div>
