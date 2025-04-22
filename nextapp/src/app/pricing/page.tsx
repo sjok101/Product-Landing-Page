@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 
-export default function Pricing(){
+export default function PricingPage(){
     return(
         <div>
-            <Navbar></Navbar>
-            
+            <Navbar/>
+            <Pricing/>
         </div>
     )
 }
