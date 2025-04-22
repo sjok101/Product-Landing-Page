@@ -1,29 +1,18 @@
 function Pricing(){
+    const pricingStyle= 'h-[700px] w-[300px] bg-blue-100/90 border-black border-1'
     return(
         <div>
         <div id="pricing-container" className="my-10 min-h-screen bg-amber-200
                                                 flex flex-col justify-center items-center">
-            <div id="pricing-box" className="w-[1200px] space-y-5">
-            <h1>Pricing</h1>
-            <p>We believe in letting you experience the power of [Product Name] firsthand, which is why we offer a free trial to get you started with no commitment.</p>
-            
-                <ol>
-                    <li>Free Trial: Enjoy full access to [Core Features, e.g., basic tools, essential integrations] for [Trial Duration, e.g., 14 days, 30 days]. Perfect for exploring [Product Name] and seeing how it can transform your [Primary User Activity, like project management, data analysis].</li>
-                    <li>Paid Plan: Once you’re ready to take things to the next level, our paid plans start at just [Starting Price, e.g., $19/month]. With the paid plan, you’ll unlock premium features such as:</li>
-                    <ul>
-                        <li>[Advanced Feature #1]: Gain access to [Feature Details, e.g., in-depth analytics, enhanced automation].</li>
-                        <li>[Advanced Feature #2]: Enjoy priority support and faster response times.</li>
-                        <li>[Advanced Feature #3]: Scale with ease using [Extra Feature or Benefit, e.g., unlimited projects, team accounts].</li>
-                    </ul>
-                </ol>
-                <p>
-                Whether you’re just getting started or looking to grow, [Product Name] offers flexible options to suit your needs. Start with the free trial and upgrade at any time—your satisfaction is our priority!
-            </p>
+            <div id="pricing-box" className="w-auto space-y-5">
+            <h1 className="text-6xl font-bold">Pricing</h1>
+            <p className="font-semibold">Use CRM-lite for free for your whole team. Upgrade to enable advanced features and metrics. </p>
             </div>
-            <div id="pricing-img-box" className="flex flex-row justify-between w-[1000px] my-5">
-            <img src="https://placehold.co/300x400"></img>
-            <img src="https://placehold.co/300x400"></img>
-            <img src="https://placehold.co/300x400"></img>
+            <div id='pricing container' className="flex flex-row items-center mx-auto text-center">
+                <div id="Free" className={`${pricingStyle} h-[750px] w-[330px] rounded-2xl`}>Free</div>
+                <div id="Basic" className={pricingStyle}>Basic</div>
+                <div id="Business" className={pricingStyle}>Business</div>
+                <div id="Enterprise" className={`${pricingStyle} rounded-r-2xl`}>Enterprise</div>
             </div>
         </div>
         </div>
